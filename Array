@@ -1,0 +1,15 @@
+# Function to find the sum of an array
+def find_sum(arr):
+    sum = 0
+    for num in arr:
+        sum += num
+    return sum
+
+# Input array (you can change this to your desired array)
+my_array = [1, 2, 3, 4, 5]
+
+# Calculate the sum of the array
+result = find_sum(my_array)
+
+# Display the result
+print("Sum of the array:", result)
