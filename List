@@ -1,0 +1,23 @@
+# Function to swap two elements in a list
+def swap_elements(my_list, index1, index2):
+    # Check if the indices are valid
+    if 0 <= index1 < len(my_list) and 0 <= index2 < len(my_list):
+        # Swap the elements using a temporary variable
+        temp = my_list[index1]
+        my_list[index1] = my_list[index2]
+        my_list[index2] = temp
+    else:
+        print("Invalid indices")
+
+# Example list (you can change this list as needed)
+my_list = [1, 2, 3, 4, 5]
+
+# Indices of elements to swap (0-based index)
+index_to_swap1 = 1
+index_to_swap2 = 3
+
+# Swap the elements in the list
+swap_elements(my_list, index_to_swap1, index_to_swap2)
+
+# Display the list after swapping
+print("List after swapping elements:", my_list)
